@@ -11,3 +11,8 @@ econ_eval=Econ.CEA(strategies=[baseline_strat, training_strat, supplies_strat, b
 Econ.CEA.show_CE_plane(econ_eval, title='Cost Effectiveness Analysis',\
                        y_label='Cost',\
                        x_label='Utility')
+
+# table
+print('')
+# return none and write result into csv
+print(Econ.build_CE_table(Econ.Interval.PREDICTION))
